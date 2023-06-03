@@ -40,3 +40,6 @@ int main()
 
     return 0;
 }
+
+// TC-O(2^n)
+// SC-O(2^n)

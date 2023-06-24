@@ -4,24 +4,29 @@
 
 using namespace std;
 
-class Solution {
+class Solution
+{
 public:
-    bool containsDuplicate(vector<int>& nums) {
+    bool containsDuplicate(vector<int> &nums)
+    {
         unordered_set<int> hashset; // set is used to container
         // that stores unique elements. It does not allow duplicates.
-        
-        for(int n: nums){ //Check if the current element 'n' is already present in the hashset
 
-            if(hashset.count(n)>0){ //Found duplicate in hashset
-                return true; //return true
+        for (int n : nums)
+        { // Check if the current element 'n' is already present in the hashset
+
+            if (hashset.count(n) > 0)
+            {                // Found duplicate in hashset
+                return true; // return true
             }
             hashset.insert(n); // Add next elements of nums in hashset
         }
-     return false; //otherwise return false
+        return false; // otherwise return false
     }
 };
 
-int main() {
+int main()
+{
     Solution solution;
 
     std::vector<int> nums1 = {1, 2, 3, 4, 5};
@@ -34,3 +39,6 @@ int main() {
 
     return 0;
 }
+
+// TC-O(N)
+// SC-O(1)

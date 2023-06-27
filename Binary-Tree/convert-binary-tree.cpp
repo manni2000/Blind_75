@@ -79,4 +79,5 @@ int main()
     return 0;
 }
 
-// TC- 
+// TC- O(N)
+// SC- O(N)

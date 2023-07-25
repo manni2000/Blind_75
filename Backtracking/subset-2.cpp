@@ -10,7 +10,8 @@ class Solution
 
         for (int i = ind; i < nums.size(); i++)
         {
-            if (i != ind && nums[i] == nums[i - 1])
+            if (i != ind && nums[i] == nums[i - 1])  //to avoid picking up the same combnations i.e. we don't pick same element for certain kth position of a combination
+
                 continue;
 
             out.push_back(nums[i]);
